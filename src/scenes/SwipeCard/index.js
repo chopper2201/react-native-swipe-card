@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { StyleSheet, View, Dimensions } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import Swiper from 'react-native-deck-swiper';
 import Button from '../../components/Button';
 import Card from '../../components/Card';
@@ -75,29 +75,17 @@ const SwipeCard = () => {
 
 export default SwipeCard;
 
-const { height } = Dimensions.get('window');
-
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
 		justifyContent: 'space-between',
-	},
-	swiperContainer: {
-		height: height - 250,
 	},
 	buttonsContainer: {
 		justifyContent: 'space-between',
 		alignItems: 'center',
 		flexDirection: 'row',
 		paddingHorizontal: '15%',
-		marginBottom: 50
-	},
-	copyright: {
-		textAlign: 'center',
-		fontSize: 10,
-		color: 'black',
-		paddingBottom: 20,
-		fontFamily: 'Avenir',
+		marginBottom: 160,
 	},
 	overlayWrapper: {
 		flexDirection: 'column',
